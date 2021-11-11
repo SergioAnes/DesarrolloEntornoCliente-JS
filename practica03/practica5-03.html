@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title> Formulario </title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Sergio Anes" />
+        <link href="css/practica5-03.css" rel="stylesheet" type="text/css" />
+        <script src="js/validaciones.js" type="text/javascript"> </script>
+        <script src="js/funciones.js" type="text/javascript"> </script>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <header>
+        </header>
+        <nav>
+        </nav>
+        <main>
+            <section>
+                <article>
+                    <div>
+                        <form name="formulario">  
+                            <h1 style="margin-top:50px; color: black;">Formulario de recogida de datos de las empresas</h1>
+                            <div>
+                                Razon Social/Apellidos y Nombre: <input type="text" name="apellidosNombre"> <br><br>
+                                Codigo de la empresa: <input type="text" name="codigoEmpresa"> <br><br>
+                                CIF/DNI de la Empresa: <input type="text" name="cifEmpresa"> <br><br>
+                            </div>
+                            <fieldset>
+                            <div>
+                                Tipo de persona: <br><br>
+                                <input type="radio" name="tipoPersona" id="fisica" value="pfisica"> Fisica 
+                                <input type="radio" name="tipoPersona" id="juridica" value="pjuridica"> Juridica
+                                <br><br>
+                            </div>
+                            </fieldset>
+                             <fieldset>
+                            <div>
+                                    Domicilio social particular: <br><br>
+                                    Dirección : <input type="text" name="direccion"> Telefono <input type="text" name="telefono"> <br><br>
+                                    Localidad : <input type="text" name="localidad"> Codigo Postal <input type="text" name="codigoPostal"> <br><br>
+                                    Provincia : <input type="text" name="provincia"> <br><br>
+                            </div>
+                             </fieldset>
+                                    <br><br>
+                            <fieldset>
+                            <div>
+                                Datos bancarios: <br><br>
+                                Codigo banco: <input type="text" name="codigoBanco"> <br><br>
+                                Codigo oficina: <input type="text" name="codigoOficina"> <br><br>
+                                Codigo control: <input type="text" name="codigoControl"> <br><br>
+                                Numero cuenta: <input type="text" name="numeroCuenta"> <br><br>
+                                IBAN: <input type="text" name="IBAN"> <br><br>
+                            </div>
+                            </fieldset>
+                                    <br><br>
+                            <div>
+                                Fecha Constitución empresa: <input type="text" name="fechaCreacionEmpresa"> <br><br>
+                                Numero trabajadores en la empresa: <input type="text" name="trabajadoresEmpresa"> <br><br>
+                                Numero de fabricas en la empresa: <input type="text" name="fabricasEmpresa"> <br><br>
+                            </div>
+                            <div>
+                                Comunidades en las que hay fábricas: 
+                                <select name="comunidades" size="5" multiple> 
+                                <option value="Andalucía">  Andalucía   </option>
+                                <option value="Aragón">  Aragón   </option>
+                                <option value="Asturias">    Asturias  </option>
+                                <option value="Baleares">   Baleares </option>
+                               <option value="Canarias">   Canarias   </option>
+                                <option value="Cantabria">  Cantabria   </option>
+                                <option value="CastillalaMancha">  Castilla la Mancha   </option>
+                                <option value="CastillaLeón">  Castilla y León   </option>
+                                <option value="Cataluña">  Cataluña   </option>
+                                <option value="ComunidadValenciana">  Comunidad Valenciana   </option>
+                                <option value="Extremadura">  Extremadura    </option>
+                                <option value="Galicia">   Galicia   </option>
+                                <option value="LaRioja">  La Rioja   </option>
+                                <option value="Madrid">  Madrid    </option>
+                                <option value="Murcia">  Murcia  </option>
+                                <option value="Navarra ">   Navarra    </option>
+                                <option value="País Vasco">  País Vasco    </option>
+                                </select>
+                                <fieldset>
+                                    <legend>Sector/es Económicos</legend>
+                                    <input type="checkbox" name="Alimentacion"> Alimentación
+                                    <input type="checkbox" name="Informatica"> Informática
+                                    <input type="checkbox" name="Comercio"> Comercio
+                                    <input type="checkbox" name="Construccion"> Construcción
+                                    <input type="checkbox" name="Hosteleria"> Hostelería                   
+                                    <input type="checkbox" name="Automocion"> Automoción
+                                    <input type="checkbox" name="Calzado"> Calzado
+                                    <input type="checkbox" name="Turismo"> Turismo
+                                    <input type="checkbox" name="Agricultura"> Agricultura
+                                    <input type="checkbox" name="Ganaderia"> Ganaderia
+                                    <input type="checkbox" name="Otros"> Otros
+                                </fieldset>
+                                
+                                <fieldset>
+                                    <legend>Tipo de Empresa</legend>
+                                    <input type="radio" name="tEmpresa" id="SociedadAnonima" value="sa"> S.A.
+                                    <input type="radio" name="tEmpresa" id="SociedadLimitada" value="sl"> S.L.
+                                    <input type="radio" name="tEmpresa" id="SociedadAnonimaLimitada" value="sal"> S.A.L.
+                                    <input type="radio" name="tEmpresa" id="Cooperativa" value="coo"> Cooperativa
+                                    <input type="radio" name="tEmpresa" id="Autonomo" value="auto"> Autónomo
+                                    <input type="radio" name="tEmpresa" id="SociedadOtras" value="otra"> Otra
+                                </fieldset>
+                                
+                            </div> <br/>
+                            <input type="submit" name="validar" value="Validar" /> 
+                            <input type="reset" value="Limpiar" />
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+        
+        </footer>
+        <aside>
+        </aside>
+    </body>
+</html>
